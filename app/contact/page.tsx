@@ -32,7 +32,7 @@ export default function ContactPage() {
 
             <div className="space-y-8 py-8 border-t border-gray-100">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#FAF9F6] flex items-center justify-center text-[#C4A484]">
+                <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-[#C4A484]">
                   <svg
                     className="w-5 h-5"
                     fill="none"
@@ -55,7 +55,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#FAF9F6] flex items-center justify-center text-[#C4A484]">
+                <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-[#C4A484]">
                   <svg
                     className="w-5 h-5"
                     fill="none"
@@ -78,7 +78,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#FAF9F6] flex items-center justify-center text-[#C4A484]">
+                <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-[#C4A484]">
                   <svg
                     className="w-5 h-5"
                     fill="none"
@@ -109,7 +109,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="bg-[#FAF9F6] p-10 rounded-sm shadow-sm md:sticky md:top-32">
+          <div className="bg-gray-50 p-10 rounded-sm md:sticky md:top-32">
             <form className="space-y-6">
               <h3 className="text-2xl font-serif mb-6">Formularz Kontaktowy</h3>
               <div>
@@ -118,7 +118,7 @@ export default function ContactPage() {
                 </label>
                 <input
                   type="text"
-                  className="w-full bg-white border border-gray-200 p-4 focus:ring-1 focus:ring-[#C4A484] focus:border-[#C4A484] outline-none transition-all"
+                  className="w-full bg-transparent border border-gray-200 p-4 focus:ring-1 focus:ring-[#C4A484] focus:border-[#C4A484] outline-none transition-all placeholder:text-gray-400"
                   placeholder="Jan Kowalski"
                 />
               </div>
@@ -128,7 +128,7 @@ export default function ContactPage() {
                 </label>
                 <input
                   type="email"
-                  className="w-full bg-white border border-gray-200 p-4 focus:ring-1 focus:ring-[#C4A484] focus:border-[#C4A484] outline-none transition-all"
+                  className="w-full bg-transparent border border-gray-200 p-4 focus:ring-1 focus:ring-[#C4A484] focus:border-[#C4A484] outline-none transition-all placeholder:text-gray-400"
                   placeholder="jan@example.com"
                 />
               </div>
@@ -138,14 +138,14 @@ export default function ContactPage() {
                 </label>
                 <textarea
                   rows={5}
-                  className="w-full bg-white border border-gray-200 p-4 focus:ring-1 focus:ring-[#C4A484] focus:border-[#C4A484] outline-none transition-all"
+                  className="w-full bg-transparent border border-gray-200 p-4 focus:ring-1 focus:ring-[#C4A484] focus:border-[#C4A484] outline-none transition-all placeholder:text-gray-400 resize-none"
                   placeholder="Opisz swój projekt..."
                 />
               </div>
               <Button
-                variant="ghost"
+                variant="secondary"
                 fullWidth
-                className="border border-gray-200 text-primary-black hover:bg-[#F6F2E8] transition-colors duration-300"
+                className="border-gray-300 text-primary-black hover:bg-primary-black hover:text-primary-white transition-colors duration-300"
               >
                 Wyślij Wiadomość
               </Button>

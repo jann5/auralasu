@@ -1,20 +1,23 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // To generuje HTML/JS/JSON zamiast serwera Node
+  output: "export",
+  distDir: "dist", // Eksportuj do folderu 'dist' zamiast '.next'
   images: {
-    unoptimized: true, // Wymagane przy 'export' na zwykły hosting
+    unoptimized: true,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
       {
-        protocol: 'https',
-        hostname: 'cdn.sanity.io',
+        protocol: "https",
+        hostname: "cdn.sanity.io",
       },
     ],
   },
+  // Upewnij się, że wszystkie dynamiczne ścieżki są generowane
+  trailingSlash: true,
 };
 
 export default nextConfig;

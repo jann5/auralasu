@@ -1,0 +1,18 @@
+[00:00:00.784] Server  LOG     
+[00:00:00.784] Server  LOG       We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:00.785] Server  LOG       The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:00.785] Server  LOG       	- include was updated to add 'dist/types/**/*.ts'
+[00:00:00.785] Server  LOG       	- include was updated to add 'dist/dev/types/**/*.ts'
+[00:00:00.785] Server  LOG     
+[00:00:00.877] Server  LOG     ✓ Ready in 561ms
+[00:00:03.870] Server  WARN    Error: Route "/shop/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:00:03.878] Server  WARN    ⚠ Unsupported metadata viewport is configured in metadata export in /shop/[slug]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:03.951] Server  WARN    ⚠ Unsupported metadata viewport is configured in metadata export in /shop/[slug]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:03.952] Server  ERROR   (node:85576) Warning: `--localstorage-file` was provided without a valid path
+(Use `node --trace-warnings ...` to show where the warning was created)
+[00:00:04.014] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.035] Server  WARN    ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
