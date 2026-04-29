@@ -1,0 +1,10 @@
+1:"$Sreact.fragment"
+2:I[70119,["/_next/static/chunks/eeaf0ffb1936d024.js","/_next/static/chunks/fd95eee89e0403a7.js","/_next/static/chunks/a1d38764c9786b55.js","/_next/static/chunks/b1f5ec2f598fef7f.js"],"Header"]
+3:I[8044,["/_next/static/chunks/eeaf0ffb1936d024.js","/_next/static/chunks/fd95eee89e0403a7.js","/_next/static/chunks/a1d38764c9786b55.js","/_next/static/chunks/b1f5ec2f598fef7f.js"],"HeroVideoSection"]
+4:I[73989,["/_next/static/chunks/eeaf0ffb1936d024.js","/_next/static/chunks/fd95eee89e0403a7.js","/_next/static/chunks/a1d38764c9786b55.js","/_next/static/chunks/b1f5ec2f598fef7f.js"],"IntroSection"]
+5:I[66658,["/_next/static/chunks/eeaf0ffb1936d024.js","/_next/static/chunks/fd95eee89e0403a7.js","/_next/static/chunks/a1d38764c9786b55.js","/_next/static/chunks/b1f5ec2f598fef7f.js"],"ModelsCarousel"]
+6:I[72230,["/_next/static/chunks/eeaf0ffb1936d024.js","/_next/static/chunks/fd95eee89e0403a7.js","/_next/static/chunks/a1d38764c9786b55.js","/_next/static/chunks/b1f5ec2f598fef7f.js"],"PhilosophySection"]
+7:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+0:{"buildId":"NyWkbhLY3Gf6iUX-_roAr","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"bg-primary-white min-h-screen","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/b1f5ec2f598fef7f.js","async":true}]],["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],"loading":null,"isPartial":false}
+9:null
