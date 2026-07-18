@@ -3,15 +3,20 @@ import ProductClient from "./ProductClient";
 import { notFound } from "next/navigation";
 
 // Generuje statyczne ścieżki dla każdego produktu w sklepie
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return SHOP_PRODUCTS.map((product) => ({
     slug: product.slug,
   }));
 }
 
 // Metadata dla SEO
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const product = SHOP_PRODUCTS.find((p) => p.slug === params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const product = SHOP_PRODUCTS.find((p) => p.slug === slug);
 
   if (!product) {
     return {
@@ -26,17 +31,20 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 }
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
-  searchParams: {
+  }>;
+  searchParams: Promise<{
     collection?: string;
-  };
+  }>;
 }
 
-export default function ProductPage({ params, searchParams }: PageProps) {
+export default async function ProductPage({ params, searchParams }: PageProps) {
+  const { slug } = await params;
+  const searchParamsData = await searchParams;
+
   const product: ShopProduct | undefined = SHOP_PRODUCTS.find(
-    (p) => p.slug === params.slug,
+    (p) => p.slug === slug,
   );
 
   if (!product) {
@@ -47,7 +55,7 @@ export default function ProductPage({ params, searchParams }: PageProps) {
   return (
     <ProductClient
       product={product!}
-      collectionParam={searchParams.collection || null}
+      collectionParam={searchParamsData.collection || null}
     />
   );
 }
